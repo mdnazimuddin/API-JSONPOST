@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		F444B7DA231D49290076697C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F444B7D8231D49290076697C /* Main.storyboard */; };
 		F444B7DC231D49430076697C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F444B7DB231D49430076697C /* Assets.xcassets */; };
 		F444B7DF231D49430076697C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F444B7DD231D49430076697C /* LaunchScreen.storyboard */; };
+		F444B7EB231D4EE30076697C /* ForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F444B7EA231D4EE30076697C /* ForecastService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F444B7DB231D49430076697C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F444B7DE231D49430076697C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F444B7E0231D49430076697C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F444B7EA231D4EE30076697C /* ForecastService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +56,6 @@
 				D2480281A40DA443DFB3BE69 /* Pods-JSONPOST.debug.xcconfig */,
 				6A4436B065B3DF030C054657 /* Pods-JSONPOST.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -80,13 +81,46 @@
 			isa = PBXGroup;
 			children = (
 				F444B7D4231D49290076697C /* AppDelegate.swift */,
-				F444B7D6231D49290076697C /* ViewController.swift */,
-				F444B7D8231D49290076697C /* Main.storyboard */,
+				F444B7E9231D4EA70076697C /* Model */,
+				F444B7E8231D4E820076697C /* View */,
+				F444B7E7231D4E760076697C /* Controller */,
+				F444B7E6231D4E5D0076697C /* Storyboard */,
 				F444B7DB231D49430076697C /* Assets.xcassets */,
-				F444B7DD231D49430076697C /* LaunchScreen.storyboard */,
 				F444B7E0231D49430076697C /* Info.plist */,
 			);
 			path = JSONPOST;
+			sourceTree = "<group>";
+		};
+		F444B7E6231D4E5D0076697C /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F444B7D8231D49290076697C /* Main.storyboard */,
+				F444B7DD231D49430076697C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		F444B7E7231D4E760076697C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F444B7D6231D49290076697C /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F444B7E8231D4E820076697C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F444B7E9231D4EA70076697C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F444B7EA231D4EE30076697C /* ForecastService.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F444B7D7231D49290076697C /* ViewController.swift in Sources */,
+				F444B7EB231D4EE30076697C /* ForecastService.swift in Sources */,
 				F444B7D5231D49290076697C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
