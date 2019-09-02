@@ -1,0 +1,6 @@
+framework module Pods_JSONPOST {
+  umbrella header "Pods-JSONPOST-umbrella.h"
+
+  export *
+  module * { export * }
+}
